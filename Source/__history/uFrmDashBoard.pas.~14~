@@ -1,0 +1,130 @@
+unit uFrmDashBoard;
+interface
+uses
+
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, uBase, IWVCLComponent,
+  IWBaseLayoutComponent, IWBaseContainerLayout, IWContainerLayout,
+  IWTemplateProcessorHTML, IWVCLBaseControl, IWBaseControl, IWBaseHTMLControl,
+  IWControl, IWCompButton, IWCompLabel, IWCanvas, IWChartJS, IWBaseComponent,
+  IWBaseHTMLComponent, IWBaseHTML40Component, IWSweetAlert;
+type
+  TFrmDashBoard = class(TFrmBase)
+    BOTAOFORM: TIWButton;
+    IWSweetAlert1: TIWSweetAlert;
+    IWButton1: TIWButton;
+    procedure BOTAOFORMAsyncClick(Sender: TObject; EventParams: TStringList);
+    procedure IWAppFormRender(Sender: TObject);
+    procedure BTN_POSTClick(Sender: TObject);
+    procedure IWButton1AsyncClick(Sender: TObject; EventParams: TStringList);
+    procedure BTN_CANCELAsyncClick(Sender: TObject; EventParams: TStringList);
+
+  private
+    { Private declarations }
+
+    Function teste:Boolean;
+
+
+  public
+    { Public declarations }
+  end;
+var
+  FrmDashBoard: TFrmDashBoard;
+implementation
+{$R *.dfm}
+
+uses UFrmClientes, ServerController;
+
+
+
+procedure TFrmDashBoard.BOTAOFORMAsyncClick(Sender: TObject;
+  EventParams: TStringList);
+begin
+  inherited;
+
+  WebApplication.ExecuteJS(Text);
+
+
+end;
+
+procedure TFrmDashBoard.BTN_CANCELAsyncClick(Sender: TObject;
+  EventParams: TStringList);
+begin
+  inherited;
+var opa := ' jsshfdhgdfghdjhg';
+end;
+
+procedure TFrmDashBoard.BTN_POSTClick(Sender: TObject);
+begin
+  inherited;
+//IWSweetAlert1.ShowConfirm()(atSuccess,'Sim','Não','IWButton1','BTN_CANCEL',)
+end;
+
+procedure TFrmDashBoard.IWAppFormRender(Sender: TObject);
+ var
+ UmaVarString:String;
+ UmaVariavelInteira:Integer;
+begin
+  inherited;
+
+   UserSession.Clipboard.Get('qualquercoisa1',UmaVarString,True);
+   UserSession.Clipboard.Get('MinhaVarInteger',UmaVariavelInteira,True);
+
+end;
+
+procedure TFrmDashBoard.IWButton1AsyncClick(Sender: TObject;
+  EventParams: TStringList);
+begin
+  inherited;
+var opa := 'dsfsfsfdsd ';
+end;
+
+function TFrmDashBoard.teste: Boolean;
+var
+Teste:String;
+begin
+
+teste :=
+
+' Swal.fire({                                              '+
+'  title: "Submit your Github username",                   '+
+'  input: "text",                                          '+
+'  inputAttributes: {                                      '+
+'    autocapitalize: "off"                                 '+
+'  },                                                      '+
+'  showCancelButton: true,                                  '+
+'  confirmButtonText: "Look up",                            '+
+'  showLoaderOnConfirm: true,                               '+
+'  preConfirm: async (login) => {                           '+
+'    try {                                                  '+
+'      const githubUrl = `                                  '+
+'        https://api.github.com/users/${login}              '+
+'      `;                                                    '+
+'      const response = await fetch(githubUrl);              '+
+'      if (!response.ok) {                                   '+
+'        return Swal.showValidationMessage(`                 '+
+'          ${JSON.stringify(await response.json())}          '+
+'        `);                                                 '+
+'      }                                                    '+
+'      return response.json();                               '+
+'    } catch (error) {                                       '+
+'      Swal.showValidationMessage(`                          '+
+'        Request failed: ${error}                            '+
+'      `);                                                   '+
+'    }                                                       '+
+'  },                                                         '+
+'  allowOutsideClick: () => !Swal.isLoading()                '+
+'}).then((result) => {                                       '+
+'  if (result.isConfirmed) {                                 '+
+'    Swal.fire({                                             '+
+'      title: ''${result.value.login}'',              '+
+'      imageUrl: result.value.avatar_url                     '+
+'    });                                                     '+
+'  }                                                         '+
+'});                                                          ';
+
+
+
+end;
+
+end.

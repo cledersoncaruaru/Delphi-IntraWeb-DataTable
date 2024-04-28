@@ -1,0 +1,49 @@
+unit UFrmClientes;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, uBase, IWVCLComponent,
+  IWBaseLayoutComponent, IWBaseContainerLayout, IWContainerLayout,
+  IWTemplateProcessorHTML, IWCompLabel, IWVCLBaseControl, IWBaseControl,
+  IWBaseHTMLControl, IWControl, IWCompButton;
+
+type
+  TFrmClientes = class(TFrmBase)
+    LABEL_TITLE: TIWLabel;
+    procedure IWAppFormCreate(Sender: TObject);
+  private
+    { Private declarations }
+    MinhaChavePK:Integer;
+  public
+    { Public declarations }
+  end;
+
+implementation
+
+{$R *.dfm}
+
+uses ServerController;
+
+procedure TFrmClientes.IWAppFormCreate(Sender: TObject);
+begin
+  inherited;
+
+   if ( TPS.Templates.Default ='') or (TPS.Templates.Default<> 'FrmListaPessoa.html') then
+        TPS.Templates.Default := 'FrmListaPessoa.html';
+
+
+      LABEL_TITLE.Text    := 'CADASTRO DE CLIENTES';
+
+      //Pegando a variavel que Peguei da Minha Lista de Clientes no Form Lista De Cliente
+      UserSession.Clipboard.Get('MinhaPK',MinhaChavePK,True);
+
+
+
+
+
+
+end;
+
+end.

@@ -1,0 +1,15 @@
+inherited FrmListaCliente: TFrmListaCliente
+  DesignLeft = 2
+  DesignTop = 2
+  object BTNDELETE: TIWButton [3]
+    AlignWithMargins = False
+    Left = 552
+    Top = 216
+    Width = 120
+    Height = 30
+    Caption = 'DELETAR'
+    Color = clBtnFace
+    FriendlyName = 'BTNDELETE'
+    OnAsyncClick = BTNDELETEAsyncClick
+  end
+end

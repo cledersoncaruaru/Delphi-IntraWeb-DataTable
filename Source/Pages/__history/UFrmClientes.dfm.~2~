@@ -1,0 +1,15 @@
+inherited FrmClientes: TFrmClientes
+  DesignLeft = 2
+  DesignTop = 2
+  object LABEL_TITLE: TIWLabel [3]
+    AlignWithMargins = False
+    Left = 48
+    Top = 96
+    Width = 150
+    Height = 17
+    HasTabOrder = False
+    FriendlyName = 'LABEL_TITLE'
+    Caption = 'TITULO DA APLICA'#199#195'O '
+    RawText = True
+  end
+end

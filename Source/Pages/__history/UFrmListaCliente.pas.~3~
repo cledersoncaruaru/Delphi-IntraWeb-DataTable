@@ -1,0 +1,69 @@
+unit UFrmListaCliente;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, uBase, IWVCLComponent,
+  IWBaseLayoutComponent, IWBaseContainerLayout, IWContainerLayout,
+  IWTemplateProcessorHTML, IWCompLabel, IWVCLBaseControl, IWBaseControl,
+  IWBaseHTMLControl, IWControl, IWCompButton;
+
+type
+  TFrmListaCliente = class(TFrmBase)
+    procedure IWAppFormCreate(Sender: TObject);
+  private
+    { Private declarations }
+    procedure Prc_Crud(EventParams: TStringList);
+    Procedure Listar(aParams: TStrings; out aResult: String);
+  public
+    { Public declarations }
+  end;
+
+implementation
+
+{$R *.dfm}
+
+uses ServerController;
+
+procedure TFrmListaCliente.IWAppFormCreate(Sender: TObject);
+begin
+  inherited;
+
+
+  if ( TPS.Templates.Default ='') or (TPS.Templates.Default<> 'FrmListaCliente.html') then
+       TPS.Templates.Default := 'FrmListaCliente.html';
+
+
+      RegisterCallBack('Pessoa',Listar);
+      RegisterCallBack('Crud', Prc_Crud);
+
+
+end;
+
+procedure TFrmListaCliente.Listar(aParams: TStrings; out aResult: String);
+begin
+
+ //Get_Lista_Pessoa(FiltrarPor,aParams,aResult);
+
+end;
+
+procedure TFrmListaCliente.Prc_Crud(EventParams: TStringList);
+begin
+
+
+
+   if (StrToIntDef(EventParams.Values['Edit'],0) > 0)then begin
+
+    UserSession.Clipboard.Put('MinhaPK', StrToIntDef(EventParams.Values['Edit'],-1));
+    WebApplication.CallBackResponse.AddJavaScriptToExecute('ajaxCall(''Menu'',''page=clientes'')');
+    Exit;
+
+
+  end;
+
+
+
+end;
+
+end.

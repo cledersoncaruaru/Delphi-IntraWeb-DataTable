@@ -1,0 +1,38 @@
+unit UFrmClientes;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, uBase, IWVCLComponent,
+  IWBaseLayoutComponent, IWBaseContainerLayout, IWContainerLayout,
+  IWTemplateProcessorHTML, IWCompLabel, IWVCLBaseControl, IWBaseControl,
+  IWBaseHTMLControl, IWControl, IWCompButton;
+
+type
+  TFrmClientes = class(TFrmBase)
+    LABEL_TITLE: TIWLabel;
+    procedure IWAppFormCreate(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  FrmClientes: TFrmClientes;
+
+implementation
+
+{$R *.dfm}
+
+procedure TFrmClientes.IWAppFormCreate(Sender: TObject);
+begin
+  inherited;
+
+  LABEL_TITLE.Text    := 'CADASTRO DE CLIENTES'
+
+
+end;
+
+end.

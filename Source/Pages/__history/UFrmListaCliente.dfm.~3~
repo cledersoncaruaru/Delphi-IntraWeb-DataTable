@@ -1,0 +1,8 @@
+inherited FrmListaCliente: TFrmListaCliente
+  DesignLeft = 2
+  DesignTop = 2
+  object FDQuery1: TFDQuery
+    Left = 296
+    Top = 112
+  end
+end

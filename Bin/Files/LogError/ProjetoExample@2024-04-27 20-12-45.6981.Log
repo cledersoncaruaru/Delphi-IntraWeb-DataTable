@@ -1,0 +1,93 @@
+------------------------------------------------------------------------------------------------------------------------
+Exception message  : [FireDAC][Phys][FB]violation of FOREIGN KEY constraint "FK_PESSOA_1" on table "PESSOA"
+Foreign key reference target does not exist
+Problematic key value is ("COD_STATUS" = 2)
+Depending on the error condition, it might be possible to restart the application.
+Exception class    : EIBNativeException
+Exception address  : 00578E36
+Exception Time     : 2024-04-27 20:12:45.698
+------------------------------------------------------------------------------------------------------------------------
+Application Name   : ProjetoExample.exe
+Application Version: 
+Started at         : 2024-04-27 20:12:20.603
+Running for        :  25 seconds
+Computer Name      : DEVDELL
+Compiler Version   : 350
+------------------------------------------------------------------------------------------------------------------------
+IntraWeb Version   : 15.6.1
+Multi-session      : False
+Content Path       : D:\Projetos\IntraWeb\Delphi-IntraWeb-DataTable\bin\wwwroot\
+Session count      : 1
+Current Thread ID  : 31364
+Application Path   : D:\Projetos\IntraWeb\Delphi-IntraWeb-DataTable\bin\
+Active Form        : FrmListaCliente (TFrmListaCliente)
+Active Form list   : [1] FrmListaCliente (TFrmListaCliente)
+Form list          : [1] IWUserSession (TIWUserSession)
+                     [2] FrmListaCliente (TFrmListaCliente)
+Browser Name       : Firefox
+Browser UserAgent  : Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:125.0) Gecko/20100101 Firefox/125.0
+Session ID         : 0fvPrXQ5n1v7pUnaPJGqxA6O0T0
+Last Access        : 2024-04-27 20:12:31.364
+Callback           : True
+Callback name      : BTNDELETE.DoOnAsyncClick
+Runtime parameters : 
+------------------------------------------------------------------------------------------------------------------------
+Client IP address  : 127.0.0.1
+Request PathInfo   : /$/callback
+Request Method     : POST
+Request User Agent : Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:125.0) Gecko/20100101 Firefox/125.0
+Cookies Count      : 5
+------------------------------------------------------------------------------------------------------------------------
+(004C7E31){ProjetoExample.exe} [00578E31] FireDAC.Phys.IBWrapper.Phys.Ibwrapper.TIBError.Check (Line 2734, "FireDAC.Phys.IBWrapper.pas" + 10) + $1C
+(004C6EAD){ProjetoExample.exe} [00577EAD] FireDAC.Phys.IBWrapper.Phys.Ibwrapper.TIBObject.Check (Line 2360, "FireDAC.Phys.IBWrapper.pas" + 5) + $A
+(004D2F23){ProjetoExample.exe} [00583F23] FireDAC.Phys.IBWrapper.Phys.Ibwrapper.TIBStatement.Execute (Line 6862, "FireDAC.Phys.IBWrapper.pas" + 8) + $43
+(004DBC6C){ProjetoExample.exe} [0058CC6C] FireDAC.Phys.IBBase.Phys.Ibbase.TFDPhysIBCommandBase.DoExecute (Line 3432, "FireDAC.Phys.IBBase.pas" + 26) + $13
+(004E1508){ProjetoExample.exe} [00592508] FireDAC.Phys.FB.Phys.Fb.TFDPhysFBCommand.InternalExecute$qqriiri (Line 1043, "FireDAC.Phys.FB.pas" + 13) + $A
+(004A209C){ProjetoExample.exe} [0055309C] FireDAC.Phys.Process_HandleSystemFailure (Line 8257, "FireDAC.Phys.pas" + 9) + $12
+(004A21D6){ProjetoExample.exe} [005531D6] FireDAC.Phys.Process_SingleRow (Line 8295, "FireDAC.Phys.pas" + 4) + $10
+(004A3287){ProjetoExample.exe} [00554287] FireDAC.Phys.TFDPhysCommand.ExecuteBase (Line 8594, "FireDAC.Phys.pas" + 44) + $1
+(00018C37){ProjetoExample.exe} [000C9C37] FastMM4.GetStackSlot$qqrv + $3
+(000194E1){ProjetoExample.exe} [000CA4E1] FastMM4.FastGetMem$qqri + $61
+(004A1BED){ProjetoExample.exe} [00552BED] FireDAC.Phys.TFDPhysCommandAsyncExecute.Execute$qqrv (Line 8147, "FireDAC.Phys.pas" + 0) + $9
+(0047016C){ProjetoExample.exe} [0052116C] FireDAC.Stan.Async.TFDStanAsyncExecutor.ExecuteOperation$qqro (Line 173, "FireDAC.Stan.Async.pas" + 6) + $8
+(004704B2){ProjetoExample.exe} [005214B2] FireDAC.Stan.Async.TFDStanAsyncExecutor.Run$qqrv (Line 268, "FireDAC.Stan.Async.pas" + 12) + $5
+(0049C2E0){ProjetoExample.exe} [0054D2E0] FireDAC.Phys.TFDPhysCommand.ExecuteTask (Line 6629, "FireDAC.Phys.pas" + 13) + $1A
+(0049C331){ProjetoExample.exe} [0054D331] FireDAC.Phys.TFDPhysCommand.ExecuteTask (Line 6637, "FireDAC.Phys.pas" + 21) + $8
+(004A348B){ProjetoExample.exe} [0055448B] FireDAC.Phys.TFDPhysCommand.Execute (Line 8645, "FireDAC.Phys.pas" + 2) + $17
+(0051CB07){ProjetoExample.exe} [005CDB07] FireDAC.Comp.Client.TFDCustomCommand.InternalExecute (Line 6847, "FireDAC.Comp.Client.pas" + 10) + $13
+(0051BB00){ProjetoExample.exe} [005CCB00] FireDAC.Comp.Client.TFDCustomCommand.SetPrepared (Line 6584, "FireDAC.Comp.Client.pas" + 101) + $2D
+(0051CDD2){ProjetoExample.exe} [005CDDD2] FireDAC.Comp.Client.TFDCustomCommand.Execute (Line 6870, "FireDAC.Comp.Client.pas" + 3) + $D
+(0052311D){ProjetoExample.exe} [005D411D] FireDAC.Comp.Client.TFDAdaptedDataSet.DoExecuteSource (Line 10125, "FireDAC.Comp.Client.pas" + 3) + $D
+(004ED37F){ProjetoExample.exe} [0059E37F] FireDAC.Comp.DataSet.Comp.Dataset.TFDDataSet.Execute (Line 3188, "FireDAC.Comp.DataSet.pas" + 8) + $9
+(0052547B){ProjetoExample.exe} [005D647B] FireDAC.Comp.Client.TFDCustomQuery.ExecSQL (Line 11582, "FireDAC.Comp.Client.pas" + 1) + $6
+(0052F4DA){ProjetoExample.exe} [005E04DA] UFrmListaCliente.TFrmListaCliente.Delete_Pessoa (Line 92, "UFrmListaCliente.pas" + 15) + $3
+(0052F233){ProjetoExample.exe} [005E0233] UFrmListaCliente.TFrmListaCliente.BTNDELETEAsyncClick (Line 57, "UFrmListaCliente.pas" + 5) + $9
+(002F21F1){ProjetoExample.exe} [003A31F1] IWControl.TIWCustomControl.DoOnAsyncClick (Line 499, "IWControl.pas" + 4) + $E
+(002E3F16){ProjetoExample.exe} [00394F16] IWCallBackFunc.TIWCallbackMethodObj.Execute$qqrp23System.Classes.TStringsr20System.UnicodeStringt2ro (Line 265, "IWCallBackFunc.pas" + 2) + $5
+(002E421B){ProjetoExample.exe} [0039521B] IWCallBackFunc.TIWCallBacks.Invoke (Line 332, "IWCallBackFunc.pas" + 17) + $22
+(0000F095){ProjetoExample.exe} [000C0095] System.@IntfCopy$qqrr44System.%DelphiInterface$17System.IInterface%x44System.%DelphiInterface$17System.IInterface% (Line 39078, "System.pas" + 6) + $0
+(002E4AA2){ProjetoExample.exe} [00395AA2] IWCallBackFunc.TIWCallBacks.PerformCallBack (Line 488, "IWCallBackFunc.pas" + 35) + $6
+(00304A1E){ProjetoExample.exe} [003B5A1E] IWRenderContext.TIWPageContext40.PerformCallBack (Line 886, "IWRenderContext.pas" + 0) + $6
+(003388A3){ProjetoExample.exe} [003E98A3] IWForm.TIWForm.PerformCallBack (Line 1847, "IWForm.pas" + 3) + $6
+(00361E1D){ProjetoExample.exe} [00412E1D] IWApplication.TIWApplication.PerformCallBack (Line 811, "IWApplication.pas" + 6) + $4
+(0033711F){ProjetoExample.exe} [003E811F] IWForm.TIWForm.DoExecuteForm (Line 1288, "IWForm.pas" + 73) + $8
+(0035B85A){ProjetoExample.exe} [0040C85A] IWBaseForm.TIWBaseForm.ExecuteForm (Line 579, "IWBaseForm.pas" + 9) + $5
+(00364D16){ProjetoExample.exe} [00415D16] IWApplication.TIWApplication.ExecuteActiveForm (Line 1852, "IWApplication.pas" + 34) + $2
+(0036497C){ProjetoExample.exe} [0041597C] IWApplication.TIWApplication.ProcessForm (Line 1726, "IWApplication.pas" + 9) + $7
+(003A0B31){ProjetoExample.exe} [00451B31] IWServerSession.TIWServerSessionHelper._ProcessForm$qqrv + $9
+(003A147F){ProjetoExample.exe} [0045247F] IWServerSession.TIWServerSession.ExecuteCallback_ActRec._0_Body$qqrv (Line 277, "IWServerSession.pas" + 0) + $3
+(003A1A6C){ProjetoExample.exe} [00452A6C] IWServerSession.TIWServerSession.DoExecuteAsCallback$qqr48System.%DelphiInterface$21System.Sysutils.TProc% (Line 354, "IWServerSession.pas" + 4) + $5
+(003A14E2){ProjetoExample.exe} [004524E2] IWServerSession.TIWServerSession.ExecuteCallback$qqrv (Line 277, "IWServerSession.pas" + 3) + $C
+(003A3A09){ProjetoExample.exe} [00454A09] IWServerSession.TIWServerSession.DoExecuteSession$qqrx20System.UnicodeStringo (Line 775, "IWServerSession.pas" + 43) + $2
+(003A42A4){ProjetoExample.exe} [004552A4] IWServerSession.TIWServerSession.ExecuteSession$qqrx20System.UnicodeString (Line 913, "IWServerSession.pas" + 67) + $9
+(00391985){ProjetoExample.exe} [00442985] IWServer.TIWServer.ExecuteUrl (Line 725, "IWServer.pas" + 88) + $6
+(00391ED9){ProjetoExample.exe} [00442ED9] IWServer.TIWServer.Execute (Line 809, "IWServer.pas" + 17) + $9
+(003A0CEB){ProjetoExample.exe} [00451CEB] IWServerSession.HttpExecute$qqrpuci (Line 152, "IWServerSession.pas" + 2) + $3
+(003BE21D){ProjetoExample.exe} [0046F21D] IWHSysServer.TIWHSysWorker.ExecuteHook (Line 1336, "IWHSysServer.pas" + 4) + $C
+(003BCBC2){ProjetoExample.exe} [0046DBC2] IWHSysServer.TIWHSysWorker.ProcessRequest (Line 874, "IWHSysServer.pas" + 19) + $14
+(003BC671){ProjetoExample.exe} [0046D671] IWHSysServer.TIWHSysThread.DoExecute (Line 738, "IWHSysServer.pas" + 13) + $B
+(003BC6EB){ProjetoExample.exe} [0046D6EB] IWHSysServer.TIWHSysThread.Execute (Line 756, "IWHSysServer.pas" + 7) + $2
+(000D5811){ProjetoExample.exe} [00186811] System.Classes.ThreadProc$qqrxp22System.Classes.TThread (Line 15845, "System.Classes.pas" + 18) + $5
+(0000A138){ProjetoExample.exe} [000BB138] System.ThreadWrapper$qqspv (Line 25778, "System.pas" + 45) + $0
+
+------------------------------------------------------------------------------------------------------------------------

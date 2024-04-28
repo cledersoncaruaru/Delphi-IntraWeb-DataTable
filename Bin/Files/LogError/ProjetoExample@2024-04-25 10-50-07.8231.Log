@@ -1,0 +1,41 @@
+------------------------------------------------------------------------------------------------------------------------
+Exception message  : Your session has expired due to inactivity.
+Your session has expired. You will have to restart the application. In order to keep sessions from expiring you may set the session timeout parameter to a higher value. The current session timeout value is 10 minutes.
+Exception class    : EExpiredSession
+Session ID         : IGj3lvlVolTbMj9dPkTl2vDTTXO
+Exception address  : 01391DD4
+Exception Time     : 2024-04-25 10:50:07.823
+------------------------------------------------------------------------------------------------------------------------
+Application Name   : ProjetoExample.exe
+Application Version: 
+Started at         : 2024-04-25 10:49:59.130
+Running for        :  8 seconds
+Computer Name      : DEVDELL
+Compiler Version   : 350
+------------------------------------------------------------------------------------------------------------------------
+IntraWeb Version   : 15.6.0
+Multi-session      : False
+Content Path       : D:\Projetos\IntraWeb\Delphi-IntraWeb-Base\bin\wwwroot\
+Session count      : 0
+Current Thread ID  : 16840
+------------------------------------------------------------------------------------------------------------------------
+Session ID         : IGj3lvlVolTbMj9dPkTl2vDTTXO
+Client IP address  : 192.168.1.38
+Request PathInfo   : /
+Request Method     : GET
+Request User Agent : Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36
+Cookies Count      : 1
+------------------------------------------------------------------------------------------------------------------------
+(003A0DCF){ProjetoExample.exe} [01391DCF] IWServerSession.TIWServerSession.GetSession$qqrx20System.UnicodeString (Line 1203, "IWServerSession.pas" + 23) + $16
+(0039FE39){ProjetoExample.exe} [01390E39] IWServerSession.TIWServerSession.ExecuteSession$qqrx20System.UnicodeString (Line 886, "IWServerSession.pas" + 40) + $6
+(0038D655){ProjetoExample.exe} [0137E655] IWServer.TIWServer.ExecuteUrl (Line 736, "IWServer.pas" + 99) + $6
+(0038DB79){ProjetoExample.exe} [0137EB79] IWServer.TIWServer.Execute (Line 809, "IWServer.pas" + 17) + $9
+(0039C98B){ProjetoExample.exe} [0138D98B] IWServerSession.HttpExecute$qqrpuci (Line 152, "IWServerSession.pas" + 2) + $3
+(003B9EB9){ProjetoExample.exe} [013AAEB9] IWHSysServer.TIWHSysWorker.ExecuteHook (Line 1336, "IWHSysServer.pas" + 4) + $C
+(003B885E){ProjetoExample.exe} [013A985E] IWHSysServer.TIWHSysWorker.ProcessRequest (Line 874, "IWHSysServer.pas" + 19) + $14
+(003B830D){ProjetoExample.exe} [013A930D] IWHSysServer.TIWHSysThread.DoExecute (Line 738, "IWHSysServer.pas" + 13) + $B
+(003B8387){ProjetoExample.exe} [013A9387] IWHSysServer.TIWHSysThread.Execute (Line 756, "IWHSysServer.pas" + 7) + $2
+(000D5751){ProjetoExample.exe} [010C6751] System.Classes.ThreadProc$qqrxp22System.Classes.TThread (Line 15845, "System.Classes.pas" + 18) + $5
+(0000A138){ProjetoExample.exe} [00FFB138] System.ThreadWrapper$qqspv (Line 25778, "System.pas" + 45) + $0
+
+------------------------------------------------------------------------------------------------------------------------

@@ -1,0 +1,93 @@
+------------------------------------------------------------------------------------------------------------------------
+Exception message  : [FireDAC][Phys][FB]Dynamic SQL Error
+SQL error code = -204
+Ambiguous field name between table STATUS and table PESSOA 
+COD_STATUS
+Depending on the error condition, it might be possible to restart the application.
+Exception class    : EIBNativeException
+Exception address  : 00BB8E36
+Exception Time     : 2024-04-27 20:07:18.669
+------------------------------------------------------------------------------------------------------------------------
+Application Name   : ProjetoExample.exe
+Application Version: 
+Started at         : 2024-04-27 20:07:08.782
+Running for        :  9 seconds
+Computer Name      : DEVDELL
+Compiler Version   : 350
+------------------------------------------------------------------------------------------------------------------------
+IntraWeb Version   : 15.6.1
+Multi-session      : False
+Content Path       : D:\Projetos\IntraWeb\Delphi-IntraWeb-DataTable\bin\wwwroot\
+Session count      : 1
+Current Thread ID  : 26100
+Application Path   : D:\Projetos\IntraWeb\Delphi-IntraWeb-DataTable\bin\
+Active Form        : FrmListaCliente (TFrmListaCliente)
+Active Form list   : [1] FrmListaCliente (TFrmListaCliente)
+Form list          : [1] IWUserSession (TIWUserSession)
+                     [2] FrmListaCliente (TFrmListaCliente)
+Browser Name       : Firefox
+Browser UserAgent  : Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:125.0) Gecko/20100101 Firefox/125.0
+Session ID         : qEcwsy6YU6kre8rmMmrW16QsazS
+Last Access        : 2024-04-27 20:07:14.840
+Callback           : True
+Callback name      : Pessoa
+Runtime parameters : 
+------------------------------------------------------------------------------------------------------------------------
+Client IP address  : 127.0.0.1
+Request PathInfo   : /$/callback
+Request Method     : GET
+Request User Agent : Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:125.0) Gecko/20100101 Firefox/125.0
+Cookies Count      : 5
+------------------------------------------------------------------------------------------------------------------------
+(004C7E31){ProjetoExample.exe} [00BB8E31] FireDAC.Phys.IBWrapper.Phys.Ibwrapper.TIBError.Check (Line 2734, "FireDAC.Phys.IBWrapper.pas" + 10) + $1C
+(004C6EAD){ProjetoExample.exe} [00BB7EAD] FireDAC.Phys.IBWrapper.Phys.Ibwrapper.TIBObject.Check (Line 2360, "FireDAC.Phys.IBWrapper.pas" + 5) + $A
+(004D29FE){ProjetoExample.exe} [00BC39FE] FireDAC.Phys.IBWrapper.Phys.Ibwrapper.TIBStatement.Prepare (Line 6769, "FireDAC.Phys.IBWrapper.pas" + 19) + $3F
+(004DA7D6){ProjetoExample.exe} [00BCB7D6] FireDAC.Phys.IBBase.Phys.Ibbase.TFDPhysIBCommandBase.PrepareBase (Line 2878, "FireDAC.Phys.IBBase.pas" + 1) + $C
+(004DA9F4){ProjetoExample.exe} [00BCB9F4] FireDAC.Phys.IBBase.Phys.Ibbase.TFDPhysIBCommandBase.InternalPrepare (Line 2932, "FireDAC.Phys.IBBase.pas" + 31) + $2
+(0049D03C){ProjetoExample.exe} [00B8E03C] FireDAC.Phys.TFDPhysCommand.Prepare (Line 6873, "FireDAC.Phys.pas" + 33) + $5
+(0051B442){ProjetoExample.exe} [00C0C442] FireDAC.Comp.Client.TFDCustomCommand.InternalPrepare (Line 6423, "FireDAC.Comp.Client.pas" + 28) + $15
+(0051B79E){ProjetoExample.exe} [00C0C79E] FireDAC.Comp.Client.TFDCustomCommand.SetPrepared (Line 6512, "FireDAC.Comp.Client.pas" + 29) + $5
+(0000F084){ProjetoExample.exe} [00700084] System.@IntfClear$qqrr44System.%DelphiInterface$17System.IInterface% (Line 39031, "System.pas" + 10) + $0
+(000404AD){ProjetoExample.exe} [007314AD] System.Variants.@VarClr$qqrr8TVarData (Line 905, "System.Variants.pas" + 1) + $0
+(004EA0C8){ProjetoExample.exe} [00BDB0C8] FireDAC.Comp.DataSet.Comp.Dataset.TFDDataSet.DoMasterDefined (Line 1827, "FireDAC.Comp.DataSet.pas" + 33) + $20
+(0051BCE5){ProjetoExample.exe} [00C0CCE5] FireDAC.Comp.Client.TFDCustomCommand.Prepare (Line 6597, "FireDAC.Comp.Client.pas" + 3) + $4
+(005229AA){ProjetoExample.exe} [00C139AA] FireDAC.Comp.Client.TFDAdaptedDataSet.DoPrepareSource (Line 9901, "FireDAC.Comp.Client.pas" + 10) + $9
+(004ECB84){ProjetoExample.exe} [00BDDB84] FireDAC.Comp.DataSet.Comp.Dataset.TFDDataSet.IsLinked (Line 3001, "FireDAC.Comp.DataSet.pas" + 1) + $D
+(004EC8F5){ProjetoExample.exe} [00BDD8F5] FireDAC.Comp.DataSet.Comp.Dataset.TFDDataSet.OpenCursor (Line 2948, "FireDAC.Comp.DataSet.pas" + 33) + $5
+(00008792){ProjetoExample.exe} [006F9792] System.@IsClass$qqrxp14System.TObjectp17System.TMetaClass (Line 18878, "System.pas" + 1) + $8
+(00524F42){ProjetoExample.exe} [00C15F42] FireDAC.Comp.Client.TFDRdbmsDataSet.OpenCursor (Line 11210, "FireDAC.Comp.Client.pas" + 5) + $5
+(003FC745){ProjetoExample.exe} [00AED745] Data.DB.Db.TDataSet.SetActive (Line 12663, "Data.DB.pas" + 12) + $7
+(004E983F){ProjetoExample.exe} [00BDA83F] FireDAC.Comp.DataSet.Comp.Dataset.TFDDataSet.SetActive (Line 1614, "FireDAC.Comp.DataSet.pas" + 7) + $2
+(003FC584){ProjetoExample.exe} [00AED584] Data.DB.Db.TDataSet.Open (Line 12619, "Data.DB.pas" + 0) + $4
+(0052FDFA){ProjetoExample.exe} [00C20DFA] UFrmListaCliente.TFrmListaCliente.Get_Lista_Pessoa (Line 170, "UFrmListaCliente.pas" + 59) + $3
+(005312A7){ProjetoExample.exe} [00C222A7] UFrmListaCliente.TFrmListaCliente.Listar (Line 234, "UFrmListaCliente.pas" + 2) + $11
+(005310FE){ProjetoExample.exe} [00C220FE] UFrmListaCliente.TFrmListaCliente.IWAppFormCreate_ActRec._0_Body$qqrp23System.Classes.TStringsr20System.UnicodeString (Line 225, "UFrmListaCliente.pas" + 0) + $26
+(002E3D1F){ProjetoExample.exe} [009D4D1F] IWCallBackFunc.TIWCallbackProc2Obj.Execute$qqrp23System.Classes.TStringsr20System.UnicodeStringt2ro (Line 201, "IWCallBackFunc.pas" + 1) + $10
+(002E421B){ProjetoExample.exe} [009D521B] IWCallBackFunc.TIWCallBacks.Invoke (Line 332, "IWCallBackFunc.pas" + 17) + $22
+(0000F095){ProjetoExample.exe} [00700095] System.@IntfCopy$qqrr44System.%DelphiInterface$17System.IInterface%x44System.%DelphiInterface$17System.IInterface% (Line 39078, "System.pas" + 6) + $0
+(002E4AA2){ProjetoExample.exe} [009D5AA2] IWCallBackFunc.TIWCallBacks.PerformCallBack (Line 488, "IWCallBackFunc.pas" + 35) + $6
+(00304A1E){ProjetoExample.exe} [009F5A1E] IWRenderContext.TIWPageContext40.PerformCallBack (Line 886, "IWRenderContext.pas" + 0) + $6
+(003388A3){ProjetoExample.exe} [00A298A3] IWForm.TIWForm.PerformCallBack (Line 1847, "IWForm.pas" + 3) + $6
+(00361E1D){ProjetoExample.exe} [00A52E1D] IWApplication.TIWApplication.PerformCallBack (Line 811, "IWApplication.pas" + 6) + $4
+(0033711F){ProjetoExample.exe} [00A2811F] IWForm.TIWForm.DoExecuteForm (Line 1288, "IWForm.pas" + 73) + $8
+(0035B85A){ProjetoExample.exe} [00A4C85A] IWBaseForm.TIWBaseForm.ExecuteForm (Line 579, "IWBaseForm.pas" + 9) + $5
+(00364D16){ProjetoExample.exe} [00A55D16] IWApplication.TIWApplication.ExecuteActiveForm (Line 1852, "IWApplication.pas" + 34) + $2
+(0036A148){ProjetoExample.exe} [00A5B148] IWApplication.TIWApplicationHelper._DoBeforeProcessForm$qqrv (Line 3521, "IWApplication.pas" + 10) + $10
+(0036497C){ProjetoExample.exe} [00A5597C] IWApplication.TIWApplication.ProcessForm (Line 1726, "IWApplication.pas" + 9) + $7
+(003A0B31){ProjetoExample.exe} [00A91B31] IWServerSession.TIWServerSessionHelper._ProcessForm$qqrv + $9
+(003A147F){ProjetoExample.exe} [00A9247F] IWServerSession.TIWServerSession.ExecuteCallback_ActRec._0_Body$qqrv (Line 277, "IWServerSession.pas" + 0) + $3
+(003A1A6C){ProjetoExample.exe} [00A92A6C] IWServerSession.TIWServerSession.DoExecuteAsCallback$qqr48System.%DelphiInterface$21System.Sysutils.TProc% (Line 354, "IWServerSession.pas" + 4) + $5
+(003A14E2){ProjetoExample.exe} [00A924E2] IWServerSession.TIWServerSession.ExecuteCallback$qqrv (Line 277, "IWServerSession.pas" + 3) + $C
+(003A3A09){ProjetoExample.exe} [00A94A09] IWServerSession.TIWServerSession.DoExecuteSession$qqrx20System.UnicodeStringo (Line 775, "IWServerSession.pas" + 43) + $2
+(003A42A4){ProjetoExample.exe} [00A952A4] IWServerSession.TIWServerSession.ExecuteSession$qqrx20System.UnicodeString (Line 913, "IWServerSession.pas" + 67) + $9
+(00391985){ProjetoExample.exe} [00A82985] IWServer.TIWServer.ExecuteUrl (Line 725, "IWServer.pas" + 88) + $6
+(00391ED9){ProjetoExample.exe} [00A82ED9] IWServer.TIWServer.Execute (Line 809, "IWServer.pas" + 17) + $9
+(003A0CEB){ProjetoExample.exe} [00A91CEB] IWServerSession.HttpExecute$qqrpuci (Line 152, "IWServerSession.pas" + 2) + $3
+(003BE21D){ProjetoExample.exe} [00AAF21D] IWHSysServer.TIWHSysWorker.ExecuteHook (Line 1336, "IWHSysServer.pas" + 4) + $C
+(003BCBC2){ProjetoExample.exe} [00AADBC2] IWHSysServer.TIWHSysWorker.ProcessRequest (Line 874, "IWHSysServer.pas" + 19) + $14
+(003BC671){ProjetoExample.exe} [00AAD671] IWHSysServer.TIWHSysThread.DoExecute (Line 738, "IWHSysServer.pas" + 13) + $B
+(003BC6EB){ProjetoExample.exe} [00AAD6EB] IWHSysServer.TIWHSysThread.Execute (Line 756, "IWHSysServer.pas" + 7) + $2
+(000D5811){ProjetoExample.exe} [007C6811] System.Classes.ThreadProc$qqrxp22System.Classes.TThread (Line 15845, "System.Classes.pas" + 18) + $5
+(0000A138){ProjetoExample.exe} [006FB138] System.ThreadWrapper$qqspv (Line 25778, "System.pas" + 45) + $0
+
+------------------------------------------------------------------------------------------------------------------------

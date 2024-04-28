@@ -1,0 +1,37 @@
+inherited FrmClientes: TFrmClientes
+  DesignLeft = 2
+  DesignTop = 2
+  inherited BTN_POST: TIWButton
+    Left = 224
+    Top = 312
+    ExplicitLeft = 224
+    ExplicitTop = 312
+  end
+  inherited BTN_CANCEL: TIWButton
+    Left = 368
+    Top = 312
+    ExplicitLeft = 368
+    ExplicitTop = 312
+  end
+  object LABEL_TITLE: TIWLabel [3]
+    AlignWithMargins = False
+    Left = 48
+    Top = 96
+    Width = 150
+    Height = 17
+    HasTabOrder = False
+    FriendlyName = 'LABEL_TITLE'
+    Caption = 'TITULO DA APLICA'#199#195'O '
+    RawText = True
+  end
+  object COD_CLIENTE: TIWEdit [4]
+    AlignWithMargins = False
+    Left = 40
+    Top = 152
+    Width = 200
+    Height = 32
+    StyleRenderOptions.RenderBorder = False
+    FriendlyName = 'COD_CLIENTE'
+    SubmitOnAsyncEvent = True
+  end
+end

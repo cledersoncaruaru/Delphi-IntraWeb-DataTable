@@ -1,0 +1,54 @@
+unit uFrmDashBoard;
+interface
+uses
+
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, uBase, IWVCLComponent,
+  IWBaseLayoutComponent, IWBaseContainerLayout, IWContainerLayout,
+  IWTemplateProcessorHTML, IWVCLBaseControl, IWBaseControl, IWBaseHTMLControl,
+  IWControl, IWCompButton, IWCompLabel, IWCanvas, IWChartJS;
+type
+  TFrmDashBoard = class(TFrmBase)
+    BOTAOFORM: TIWButton;
+    procedure BOTAOFORMAsyncClick(Sender: TObject; EventParams: TStringList);
+    procedure IWAppFormRender(Sender: TObject);
+
+  private
+    { Private declarations }
+
+
+  public
+    { Public declarations }
+  end;
+var
+  FrmDashBoard: TFrmDashBoard;
+implementation
+{$R *.dfm}
+
+uses UFrmClientes, ServerController;
+
+
+
+procedure TFrmDashBoard.BOTAOFORMAsyncClick(Sender: TObject;
+  EventParams: TStringList);
+begin
+  inherited;
+
+  WebApplication.ShowForm(TFrmClientes,False,True)
+
+
+end;
+
+procedure TFrmDashBoard.IWAppFormRender(Sender: TObject);
+ var
+ UmaVarString:String;
+ UmaVariavelInteira:Integer;
+begin
+  inherited;
+
+   UserSession.Clipboard.Get('qualquercoisa1',UmaVarString,True);
+   UserSession.Clipboard.Get('MinhaVarInteger',UmaVariavelInteira,True);
+
+end;
+
+end.

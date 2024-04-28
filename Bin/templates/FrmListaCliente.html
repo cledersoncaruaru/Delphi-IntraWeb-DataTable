@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+  <head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>Components / Accordion - NiceAdmin Bootstrap Template</title>
+    <meta content name="description">
+    <meta content name="keywords">
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.gstatic.com" rel="preconnect">
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+      rel="stylesheet">
+
+    <link href="assets/css/style.css" rel="stylesheet">
+
+    <script type="text/javascript"
+      src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript" src="./assets/js/jquery.min.js"></script>
+    <link href="DataTables/datatables.min.css" />
+    <script src="DataTables/datatables.min.js"></script>
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet"
+      href="DataTables/Responsive-2.4.0/css/responsive.bootstrap.min.css">
+
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link class="main-stylesheet" href="sweetalert2/sweetalert2.min.css"
+      rel="stylesheet" type="text/css" />
+    <script type="text/javascript" language="javascript"
+      src="sweetalert2/sweetalert2.min.js"></script>
+
+  </head>
+
+  <body>
+    <div style="display: none">{%BTNDELETE%}</div>
+    <h1>{%LABEL_TITLE%}</h1>
+
+    <section class="section dashboard">
+      <div class="row">
+
+        <hr />
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+            <table id="Lista"
+              class="table table-bordered table-striped table-hover table-sm"
+              style="width: 100%">
+              <thead>
+                <tr>
+                  <th>Codigo</th>
+                  <th>Nome | Razão</th>
+                  <th>CPF | CNPJ</th>
+                  <th>Email</th>
+                  <th>Telefone</th>
+                  <th>Cidade</th>
+                  <th>UF</th>
+                  <th>Status</th>
+                  <th>Ação</th>
+                </tr>
+              </thead>
+            </table>
+          </div>
+        </div>
+
+        <div class="col-lg-12">
+          <div class="row">
+
+            <div class="col-12">
+              <div class="card">
+
+                <div class="filter">
+                  <a class="icon" href="#" data-bs-toggle="dropdown"><i
+                      class="bi bi-three-dots"></i></a>
+                  <ul
+                    class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
+                    <li class="dropdown-header text-start">
+                      <h6>Filter</h6>
+                    </li>
+
+                    <li><a class="dropdown-item" href="#">Today</a></li>
+                    <li><a class="dropdown-item" href="#">This Month</a></li>
+                    <li><a class="dropdown-item" href="#">This Year</a></li>
+                  </ul>
+                </div>
+
+              </div>
+            </div>
+
+            <!-- Recent Sales -->
+            <div class="col-12">
+              <div class="card recent-sales overflow-auto">
+
+                <div class="filter">
+                  <a class="icon" href="#" data-bs-toggle="dropdown"><i
+                      class="bi bi-three-dots"></i></a>
+                  <ul
+                    class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
+                    <li class="dropdown-header text-start">
+                      <h6>Filter</h6>
+                    </li>
+
+                    <li><a class="dropdown-item" href="#">Today</a></li>
+                    <li><a class="dropdown-item" href="#">This Month</a></li>
+                    <li><a class="dropdown-item" href="#">This Year</a></li>
+                  </ul>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <script>
+
+    $(document).ready(function () {
+       
+       
+        $("#Lista").DataTable({
+
+            responsive: true,
+            pageLength: 10,
+            language: {
+                url: "DataTables/Languagem/Portuguese-Brasil.json",
+            },
+            columnDefs: [
+                {
+                    targets: 0,
+                    className: "text-center",
+                    width: "45px",
+                },
+
+                {
+                    targets: 1,
+                    className: "text-left",
+                    width: "450px",
+                },
+                {
+                    targets: 2,
+                    className: "text-center",
+                    width: "80px",
+                },
+                {
+                    targets: 3,
+                    className: "text-center",
+                    width: "80px",
+                },
+                {
+                    targets: 4,
+                    className: "text-center",
+                    width: "80px",
+                },
+                {
+                    targets: 5,
+                    className: "text-center",
+                    width: "150px",
+                },
+                {
+                    targets: 6,
+                    className: "text-center",
+                    width: "30px",
+                },
+                {
+                    targets: 7,
+                    className: "text-center",
+                    width: "65px",
+                },
+                {
+                    targets: 8,
+                    className: "text-center",
+                    width: "120px",
+                },
+            ],
+
+            order: [[1, "asc"]],
+            paging: false,
+            ordering: true,
+            searching: true,
+            serverSide: true,
+            processing: true,
+            ajax: "/$/callback?callback=Pessoa",
+        });
+
+
+
+
+    });
+
+
+
+
+
+
+
+</script>
+
+  </body>
+
+</html>

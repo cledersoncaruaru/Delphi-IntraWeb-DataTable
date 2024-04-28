@@ -1,0 +1,126 @@
+inherited FrmDashBoard: TFrmDashBoard
+  Width = 975
+  Height = 602
+  OnRender = IWAppFormRender
+  ExplicitWidth = 975
+  ExplicitHeight = 602
+  DesignLeft = 2
+  DesignTop = 2
+  inherited BTN_POST: TIWButton
+    Left = 554
+    Top = 552
+    OnClick = BTN_POSTClick
+    ExplicitLeft = 554
+    ExplicitTop = 552
+  end
+  inherited BTN_CANCEL: TIWButton
+    Left = 680
+    Top = 552
+    OnAsyncClick = BTN_CANCELAsyncClick
+    ExplicitLeft = 680
+    ExplicitTop = 552
+  end
+  object BOTAOFORM: TIWButton [3]
+    AlignWithMargins = False
+    Left = 840
+    Top = 11
+    Width = 120
+    Height = 30
+    Caption = 'BOTAOFORM'
+    Color = clBtnFace
+    FriendlyName = 'BOTAOFORM'
+    OnAsyncClick = BOTAOFORMAsyncClick
+  end
+  object IWButton1: TIWButton [4]
+    AlignWithMargins = False
+    Left = 824
+    Top = 552
+    Width = 120
+    Height = 30
+    ParentCustomHint = False
+    Caption = 'IWButton1'
+    Color = clBtnFace
+    FriendlyName = 'IWButton1'
+    OnAsyncClick = IWButton1AsyncClick
+  end
+  object BTN_DOWNLOAD: TIWButton [5]
+    AlignWithMargins = False
+    Left = 88
+    Top = 392
+    Width = 120
+    Height = 30
+    Caption = 'Download PNG'
+    Color = clBtnFace
+    FriendlyName = 'BTN_DOWNLOAD'
+    OnAsyncClick = BTN_DOWNLOADAsyncClick
+  end
+  object BTN_UNDO: TIWButton [6]
+    AlignWithMargins = False
+    Left = 240
+    Top = 392
+    Width = 120
+    Height = 30
+    Caption = 'Undo'
+    Color = clBtnFace
+    FriendlyName = 'BTN_UNDO'
+    OnAsyncClick = BTN_UNDOAsyncClick
+  end
+  object BTN_UPLOAD: TIWButton [7]
+    AlignWithMargins = False
+    Left = 392
+    Top = 392
+    Width = 120
+    Height = 30
+    Caption = 'Upload Signature'
+    Color = clBtnFace
+    FriendlyName = 'BTN_UPLOAD'
+    OnAsyncClick = BTN_UPLOADAsyncClick
+  end
+  object BTN_CLEAR: TIWButton [8]
+    AlignWithMargins = False
+    Left = 536
+    Top = 392
+    Width = 120
+    Height = 30
+    Caption = 'Clear'
+    Color = clBtnFace
+    FriendlyName = 'BTN_CLEAR'
+    OnAsyncClick = BTN_CLEARAsyncClick
+  end
+  object IWSignaturePad1: TIWSignaturePad [9]
+    AlignWithMargins = False
+    Left = 56
+    Top = 88
+    Width = 679
+    Height = 286
+    Margins.Left = 0
+    Margins.Top = 0
+    Margins.Right = 0
+    Margins.Bottom = 0
+    Css = 'form-control'
+    RenderSize = False
+    StyleRenderOptions.RenderSize = False
+    StyleRenderOptions.RenderPosition = False
+    StyleRenderOptions.RenderFont = False
+    StyleRenderOptions.RenderZIndex = False
+    StyleRenderOptions.RenderVisibility = False
+    StyleRenderOptions.RenderStatus = False
+    StyleRenderOptions.RenderAbsolute = False
+    StyleRenderOptions.RenderPadding = False
+    StyleRenderOptions.RenderBorder = False
+    BorderOptions.Width = 0
+    Font.Color = clNone
+    Font.FontName = 'sans-serif'
+    Font.Size = 1
+    Font.Style = []
+    Font.PxSize = 1
+    OnPngImageUploaded = IWSignaturePad1PngImageUploaded
+    BrushColor = clWebWHITE
+    GlobalAlpha = 1.000000000000000000
+    RenderCDNFiles = False
+  end
+  object IWSweetAlert1: TIWSweetAlert
+    Left = 896
+    Top = 64
+  end
+end
